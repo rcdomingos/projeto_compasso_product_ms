@@ -7,19 +7,24 @@ import javax.validation.constraints.NotNull;
 
 import com.rcdomingos.productms.entities.Product;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class ProductDTO {
 	
 	@NotNull
 	@NotBlank
+	@ApiModelProperty(value = "Nome do produto")
 	private String name;
 	
 	@NotNull
 	@NotBlank
+	@ApiModelProperty(value = "Descrição do produto")
 	private String description;
 
 	@Min(0)
 	@Max(Long.MAX_VALUE)
 	@NotNull
+	@ApiModelProperty(value = "Preço do produto")
 	private Double price;
 
 	public String getName() {

@@ -9,17 +9,26 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "tb_product")
 public class Product implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	@ApiModelProperty(value = "Código do produto")
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	@ApiModelProperty(value = "Nome do produto")
 	private String name;
+	
+	@ApiModelProperty(value = "Descrição do produto")
 	private String description;
+	
+	@ApiModelProperty(value = "Preço do produto")
 	private Double price;
 
 	public Product() {
