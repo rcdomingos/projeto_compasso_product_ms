@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.rcdomingos.productms.dto.ProductDTO;
-import com.rcdomingos.productms.entities.Product;
-import com.rcdomingos.productms.services.ProductService;
+import com.rcdomingos.productms.model.dto.ProductDTO;
+import com.rcdomingos.productms.model.entities.Product;
+import com.rcdomingos.productms.model.services.ProductService;
 
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

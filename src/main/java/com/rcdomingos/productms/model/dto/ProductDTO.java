@@ -1,11 +1,11 @@
-package com.rcdomingos.productms.dto;
+package com.rcdomingos.productms.model.dto;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-import com.rcdomingos.productms.entities.Product;
+import com.rcdomingos.productms.model.entities.Product;
 
 import io.swagger.annotations.ApiModelProperty;
 

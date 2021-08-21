@@ -1,4 +1,4 @@
-package com.rcdomingos.productms.services;
+package com.rcdomingos.productms.model.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,9 +10,9 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
-import com.rcdomingos.productms.entities.Product;
 import com.rcdomingos.productms.exceptions.DatabaseException;
 import com.rcdomingos.productms.exceptions.ResourceNotFoundException;
+import com.rcdomingos.productms.model.entities.Product;
 import com.rcdomingos.productms.repositories.ProductRepository;
 
 @Service

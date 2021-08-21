@@ -1,4 +1,4 @@
-package com.rcdomingos.productms.entities;
+package com.rcdomingos.productms.model.entities;
 
 import java.io.Serializable;
 

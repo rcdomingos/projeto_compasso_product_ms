@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
-import com.rcdomingos.productms.entities.Product;
+import com.rcdomingos.productms.model.entities.Product;
 
 @DataJpaTest
 public class ProductRepositoryTest {
@@ -19,7 +19,7 @@ public class ProductRepositoryTest {
 
 	@Test
 	@DisplayName("Deve Cadastrar um novo produto no banco de dados")
-	public void should_create_new_product() {
+	public void shouldCreateNewProduct() {
 
 		Product product = new Product("Computador", "Computador para desenv", 4569.90);
 
@@ -35,7 +35,7 @@ public class ProductRepositoryTest {
 
 	@Test
 	@DisplayName("Deve achar todos os produtos cadastrados")
-	public void should_find_all_products() {
+	public void shouldFindAllProducts() {
 		Product product1 = new Product("PC1", "teste pc1", 999.00);
 		Product product2 = new Product("PC2", "teste pc1", 999.00);
 		Product product3 = new Product("PC3", "teste pc1", 999.00);

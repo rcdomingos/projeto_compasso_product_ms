@@ -8,7 +8,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.rcdomingos.productms.entities.StandardError;
+import com.rcdomingos.productms.model.entities.StandardError;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {
